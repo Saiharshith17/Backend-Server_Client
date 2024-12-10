@@ -25,6 +25,9 @@ public class Server {
                 } else {
                     System.out.println("Client disconnected");
                 }
+                toClient.close();
+                fromClient.close();
+                acceptedConnection.close();
 
             } catch (IOException e) {
                 System.err.println("Error handling client connection: " + e.getMessage());
