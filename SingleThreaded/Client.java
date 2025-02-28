@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.io.BufferedReader;
 
 
-
 public class Client {
     public void run() throws UnknownHostException, IOException {
         int port = 8010;
