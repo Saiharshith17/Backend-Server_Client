@@ -24,3 +24,17 @@ public class Client {
             fromSocket.close();
              socket.close();
 
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            Client client = new Client();
+            client.run();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
